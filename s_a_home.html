@@ -1,0 +1,298 @@
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #003366;
+                height: 80px;
+                }
+
+            li {
+                float: right;
+                width: 100px;
+                
+            }
+            
+            
+            li a {
+                display: block;
+                color: #ffe5b4;
+                text-align: center;
+                padding: 20px 16px;
+                text-decoration: none;
+                height: 80px;
+                font-size: 20px;
+                
+                }
+
+            li a:hover:not(.active) {
+                background-color: #0077cc;
+                }
+
+            .active {
+                background-color: #005999;
+                }
+            .background_img{
+                background-image:url("main_img.jpg");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                
+            }
+            
+           .image{
+                width:600px;
+                height:300px;
+                
+                background-color:rgb(0, 51, 102,0.8);
+                margin: auto;
+                margin-top: 70px;
+                
+           }
+           .nav{
+                color: #ffe5b4;
+                font-size:50;
+                font-family:'Style Script';
+                padding-top: 70px;
+                text-align: center;
+                
+           }
+        
+           
+            .row1{
+                padding:10px;
+                height:580px;
+                background-color: #fff;
+                
+            }
+            .column{
+                width: 100%;
+                
+                height: 400px;
+                padding: 15px;
+            }
+            .column1{
+                padding: 15px;
+                float: left;
+                width: 30.33%;
+                height: 400px;
+            }
+            .div{
+                
+                background-color: #ffffff;
+                border-radius:15px ;
+                color:#003366;
+                border: 1px #888888;
+                text-decoration: none;
+            }
+            .div a{
+                text-decoration: none;
+                transition: transform .2s;
+            }
+            .div a:visited{
+                color:#003366;
+            }
+            
+            .img{
+                height: 300px;
+                width: 92%;
+                padding:12px;
+                padding-bottom:4px ;
+                border-radius: 30px;
+               
+            }
+            .title{
+                padding-left:20px;
+                
+            }
+            .subtitle{
+                padding-left:20px;
+                padding-bottom: 2px;
+                color: rgb(0, 51, 102,0.8);
+            }
+            .div:hover{
+                border: 2px gray;
+                box-shadow: 1px 1px 5px 2px #d9d9d9;
+                -ms-transform: scale(1.1); /* IE 9 */
+                -webkit-transform: scale(1.1); /* Safari 3-8 */
+                transform: scale(1.1); 
+                /*box-shadow: 1px 1px 5px 2px #a09e9e;*/
+            }
+            .div h1{
+                font-family: 'Playfair Display', serif;;
+            }
+        </style>
+        
+    </head>
+    <body>
+        
+        <div class="background_img">
+            <ul>
+                
+                <li><a href="#contact">Profile</a></li>
+                <li><a href="#contact">Cart</a></li>
+                
+                <li><a class="active" href="#home">Home</a></li>
+                <img src="delice.jpg" style="width:100 ; height:80 ;float: left;">
+                <li style="float: left; padding: 3px 16px;margin-left: 20px; color: #ffe5b4;font-size:50px;font-family: 'Style Script';">Delice</li>
+                
+            </ul>
+            <div class="image">
+           
+            <p class="nav" >Delivering Deliciousness </p>
+            <p style="text-align: center;">
+                <input style="border-radius: 4px;width: 300px;height:30px" type = "text"  autocomplete=off placeholder="Search for Restaurants" id ="user" name  = "user" class="tb" /> 
+                <input type="button" value="Find" style=" border-radius: 4px;text-align: center;width: 60px;height:30px; background-color:#ffe5b4;color:#003366;" >
+            </p>
+            </div>
+            <br><br><br><br><br><br><br><br>
+        </div>
+        <button id="resto" onclick="add()" type="button">Add a Restaurant</button>
+        <h1 style="padding-top: 10px; background-color:#003366;color:#ffe5b4;opacity: 0.8;height: 60px ;text-align: center;">Restaurants</h1>
+        <div class="row1">
+            <div class="column" >
+                <div class="column1">
+                    <div class="div"><a href="bbk.html">
+                        <img  class="img" src="resto1.jpg" alt="Restaurant Image">
+                        <h1 class="title">Biryani By Kilo</h2>
+                        
+                        <h3 class="subtitle">Vikroli,&nbspMumbai</h3>
+                        <span  style="padding-left: 20px;padding-bottom: 10px;" class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star "></span>
+                        <span   class="fa fa-star "></span>
+                    </a>
+                    </div>
+                </div>
+                <div class="column1">
+                    <div class="div"><a href="sub.html">
+                        <img  class="img" src="subway.jpg" alt="Subway Image">
+                        <h1 class="title">Subway</h1>
+                        
+                        <h3 class="subtitle">Mulund,&nbspMumbai</h3>
+                        <span  style="padding-left: 20px;padding-bottom: 10px;" class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked "></span>
+                    </a>    
+                    </div>
+                </div>
+                <div class="column1">
+                    <div class="div">
+                        <img  class="img" src="mc.jpg" alt="McDonald's Image">
+                        <h1 class="title">McDonald's</h2>
+                        
+                        <h3 class="subtitle">Vikroli,&nbspMumbai</h3>
+                        <span  style="padding-left: 20px;padding-bottom: 10px;" class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star "></span>
+                        <span   class="fa fa-star "></span>
+                    </div>
+                </div>    
+            </div>
+            <br><br><br><br><br>
+            <div class="column" >
+                <div class="column1">
+                    <div class="div"><a href="kw.html">
+                        <img  class="img" src="kw.jpg" alt="Kwality Walls Image">
+                        <h1 class="title">Kwality Wall's</h2>
+                        
+                        <h3 class="subtitle">Bhandup,&nbspMumbai</h3>
+                        <span  style="padding-left: 20px;padding-bottom: 10px;" class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star "></span>
+                    </a>
+                    </div>
+                </div>
+                <div class="column1">
+                    <div class="div">
+                        <img  class="img" src="sp.jpg" alt="Spice up Image">
+                        <h1 class="title">Spice Up</h2>
+                        
+                        <h3 class="subtitle">Naupada,&nbspThane</h3>
+                        <span  style="padding-left: 20px;padding-bottom: 10px;" class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        
+                        
+                    </div>
+                </div>
+                <div class="column1">
+                    <div class="div">
+                        <img  class="img" src="sweet.jpg" alt="Krishna Sweets Image">
+                        <h1 class="title">Krishna Sweets</h2>
+                        
+                        <h3 class="subtitle">Thane West</h3>
+                        <span  style="padding-left: 20px;padding-bottom: 10px;" class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star "></span>
+                        <span   class="fa fa-star "></span>
+                    </div>
+                </div>    
+            </div>
+            <br><br><br><br><br>
+            <div class="column" >
+                <div class="column1">
+                    <div class="div">
+                        <img  class="img" src="pav.jpg" alt="Shubham Image">
+                        <h1 class="title">Shubham Pure Veg </h2>
+                        
+                        <h3 class="subtitle">Kalyan,&nbspMumbai</h3>
+                        <span  style="padding-left: 20px;padding-bottom: 10px;" class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star "></span>
+                        <span   class="fa fa-star "></span>
+                    </div>
+                </div>
+                <div class="column1">
+                    <div class="div">
+                        <img  class="img" src="food.jpg" alt="Restaurant Image">
+                        <h1 class="title">The Food Town</h2>
+                        
+                        <h3 class="subtitle">Mulund,&nbspMumbai</h3>
+                        <span  style="padding-left: 20px;padding-bottom: 10px;" class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star "></span>
+                        
+                    </div>
+                </div>
+                <div class="column1">
+                    <div class="div">
+                        <img  class="img" src="wafle.jpg" alt="Restaurant Image">
+                        <h1 class="title">The Belgian Waffle Co.</h2>
+                        
+                        <h3 class="subtitle">Nahur,&nbspMumbai</h3>
+                        <span  style="padding-left: 20px;padding-bottom: 10px;" class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star checked"></span>
+                        <span   class="fa fa-star "></span>
+                        <span   class="fa fa-star "></span>
+                    </div>
+                </div>    
+            </div>
+            <br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <br><br><br><br><br>
+        <script>
+            function myFunction() {
+              
+            }
+        </script>
+    </body>
+    
+</html>

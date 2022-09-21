@@ -1,0 +1,44 @@
+body{   
+    background-image:url("l3.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+    background-size: 100% 100%;
+}  
+#frm{  
+    
+    border: solid #ffffff 1px;  
+    width:400px;  
+    height:250px;
+    border-radius: 2px;  
+    margin: auto;  
+    margin-top:120px ;
+    opacity: 0.9;
+    background:#003153;  
+   
+    padding: 50px;  
+    color: #ffe5b4;
+}  
+
+.tb{
+    height:28px; width:230px; border:1px solid #ffe5b4; color:#00487a; font-weight:bold; border-left:2px solid #ffe5b4;  ;
+    background-color:#fff ;
+} 
+.btn{
+    width:80px; height:32px; outline:none;  font-weight:bold; border:0px solid #00487a; text-shadow: 0px 0.5px 0.5px #fff;	
+    border-radius: 2px; font-weight: 600; color: #00487a; letter-spacing: 1px; font-size:14px; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;
+    margin-left:120px;
+} 
+.btn1{
+    width:80px; height:32px; outline:none;  font-weight:bold; border:0px solid #00487a; text-shadow: 0px 0.5px 0.5px #fff;	
+    border-radius: 2px; font-weight: 600; color: #00487a; letter-spacing: 1px; font-size:14px; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;
+    margin-left:15px;
+} 
+.btn:hover
+{
+    background-color:#ebded1; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px solid #f1f1f1; color: #003153;
+}
+.btn1:hover
+{
+    background-color:#ebded1; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px solid #f1f1f1; color: #003153;
+}

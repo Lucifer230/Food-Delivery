@@ -1,0 +1,341 @@
+<html>
+    <head>
+        <title>The Food Town</title>
+        <link rel="stylesheet" href="http://static.sasongsmat.nu/fonts/vegetarian.css" />
+        <title>Biryani By Kilo</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #003366;
+                height: 80px;
+                }
+
+            li {
+                float: right;
+                width: 100px;
+                
+            }
+            
+            
+            li a {
+                display: block;
+                color: #ffe5b4;
+                text-align: center;
+                padding: 20px 16px;
+                text-decoration: none;
+                height: 80px;
+                font-size: 20px;
+                
+                }
+
+            li a:hover:not(.active) {
+                background-color: #0077cc;
+                }
+
+            .active {
+                background-color: #005999;
+                }
+            .background_img{
+                background-image:url("food.jpg");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                
+            }
+            .image{
+                width:500px;
+                height:300px;
+                
+                background-color:rgb(0, 51, 102,0.8);
+                margin: auto;
+                margin-top: 70px;
+                
+           }
+           .nav{
+                color: #ffe5b4;
+                font-size:54;
+                font-family:'Playfair Display', serif;;
+                padding-top: 100px;
+                text-align: center;
+                transition: transform .2s;
+                
+           }
+           .details{
+            color: #ffe5b4;
+            font-family:'Playfair Display', serif;
+            text-align: center;
+           }
+           .nav:hover{
+
+                -ms-transform: scale(1.1); /* IE 9 */
+                -webkit-transform: scale(1.1); /* Safari 3-8 */
+                transform: scale(1.1); 
+           }
+           .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 30px 20px;
+                
+                padding: 30px 20px;
+                }
+                .items{
+                    box-shadow: 1px 1px 5px 2px rgb(0, 0, 0,0.1);
+                    border-radius: 10px;
+                }
+                .item img{
+                    width: 97%;
+                    height: 300px;
+                    object-fit: cover;
+                    transition:0.2s ease;
+                    border-radius: 10px;
+                    padding-top: 8px;
+                    padding-left: 6px;
+                }
+                .item img:hover{
+                    transform: scale(1.04);
+                }
+                .item h4{
+                    padding:5px;
+                    padding-bottom: 0px;
+                    text-align: center;
+                    font-size: 22px;
+                }
+                .item span{
+                    padding:5px;
+                    padding-bottom: 0px;
+                    text-align: center;
+                    font-size: 22px;
+                }
+                .item h3{
+                    text-align: center;
+                }
+                .item button{
+                    padding: 5px 30px;
+                    border: none;
+                    outline: none;
+                    background-color:  rgb(0, 51, 102,0.9);
+                    color: #ffe5b4;
+                    border-radius: 4px;
+                    font-size: 20px;
+                    transition:0.2s ease;
+                    margin: 10 auto;
+                    display: block;
+                }
+                .item button:hover{
+                    transform: scale(1.08);
+                }
+                .heading{
+                    background-color: rgb(0, 51, 102,0.9);
+                    color:#ffe5b4;
+                    height: 50px;
+                    text-align: center;
+                    font-size: 30px;
+                    
+                }
+                .heading>h3{
+                    margin-top: 5px;
+                    text-align: center;
+                }
+                @media screen and (max-width:1000px){
+                    .grid-container{
+                        grid-template-columns: repeat(2,1fr);
+                    }
+                    
+                }
+                @media screen and (max-width:768px){
+                    .grid-container{
+                        grid-template-columns: repeat(1,1fr);
+                    }
+                    
+                }
+        </style>
+    </head>
+    <body>
+        <div class="background_img">
+            <ul>
+                <li><a href="#contact">Profile</a></li>
+                <li><a href="#contact">Cart</a></li>
+                
+                <li><a  href="hmepage.html">Home</a></li>
+                <img src="delice.jpg" style="width:100 ; height:80 ;float: left;">
+                <li style="float: left; padding: 3px 16px;margin-left: 20px; color: #ffe5b4;font-size:50px;font-family: 'Style Script';">Delice</li>
+                
+            </ul>
+            <div class="image">
+           
+            <p class="nav" >The Food Town</p>
+            <p class="details">Mulund, Mumbai</p>
+            <p class="details">12:00noon to 11:30pm</p>
+            
+            </div>
+            <br><br><br><br><br><br><br><br>
+        </div>
+        <div class="heading">
+            <h3 >&mdash; Menu &mdash;</h3>
+        </div>
+        
+        <div class="grid-container">
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/cij0697qzks20wahgvwt" alt="Dish Image">
+                    
+                    <h4> <span class="vegetarianicon">&#8865;</span></span> Veg Manchow Soup </h4>
+                    <h3>&#8377 125 </h3>
+                    <button >Quantity</button>
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/hcse6pbihlenzxsos2cr" alt="Dish Image">
+                    
+                    <h4> <span class="vegetarianicon">&#8865;</span></span> Veg Schezwan Noodle Soup </h4>
+                    <h3>&#8377 130 </h3>
+                    <button >Quantity</button>
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/om05t6pskrzunefz37ev" alt="Dish Image">
+                    
+                    <h4> <span class="vegetarianicon">&#8865;</span></span> Veg Spring Roll - 4 Pcs</h4>
+                    <h3>&#8377 150 </h3>
+                    <button >Quantity</button>
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/cyvqdhmgeuapscloyuxd" alt="Dish Image">
+                    
+                    <h4> <span style="color: maroon;" class="vegetarianicon">&#8865;</span></span> Chicken Manchow Soup</h4>
+                    <h3>&#8377 150 </h3>
+                    <button >Quantity</button>
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/bavm9r6fsakls2mrrzeu" alt="Dish Image">
+                    
+                    <h4> <span style="color: maroon;" class="vegetarianicon">&#8865;</span></span> Chicken Schezwan Noodle Soup </h4>
+                    <h3>&#8377 150 </h3>
+                    <button >Quantity</button>
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/mpltcl0fut2keuuh98yl" alt="Dish Image">
+                    
+                    <h4> <span style="color: maroon;" class="vegetarianicon">&#8865;</span></span> Chicken Spring Roll - 4 Pcs </h4>
+                    <h3>&#8377 180 </h3>
+                    <button >Quantity</button>
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/giazrujwhwoiz3xjsayi" alt="Dish Image">
+                    
+                    <h4> <span class="vegetarianicon">&#8865;</span></span> Veg Manchurian with Fried Rice Bowl</h4>
+                    <h3>&#8377 219 </h3>
+                    <button >Quantity</button>
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+        
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/gour4gfnz1oh2tdk6usl" alt="Dish Image">
+                    <h4><span class="vegetarianicon">&#8865;</span></span> Chilli Paneer with Fried Rice Bowl </h4>
+                    <h3>&#8377 250 </h3>
+                    <button >Quantity</button>
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+            
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/cddb8cvddr1nok1awgov" alt="Dish Image">
+                    <h4> <span class="vegetarianicon">&#8865;</span></span> Kung Pao Panner with Hakka Noodles Bowl </h4>
+                    <h3>&#8377 270 </h3>
+                    <button >Quantity</button>
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/nvefnowpmnsiflvoq105" alt="Dish Image">
+                    
+                    <h4> <span class="vegetarianicon">&#8865;</span></span>Veg Chilli Garlic Fried Rice</h4>
+                    <h3>&#8377 170 </h3>
+                    <button >Quantity</button>
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+        
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/zaomyglvnw9deuauoxzr" alt="Dish Image">
+                    <h4><span class="vegetarianicon">&#8865;</span></span> Burnt Garlic Fried Rice</h4>
+                    <h3>&#8377 160 </h3>
+                    <button >Quantity</button>
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+            
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/pbrvrwj8jgjewvvhy2px" alt="Dish Image">
+                    <h4> <span class="vegetarianicon">&#8865;</span></span> Veg Chinese Schezwan Fried Rice</h4>
+                    <h3>&#8377 190 </h3>
+                    <button >Quantity</button>
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+            
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/lybggmrdxy5ccswge4jq" alt="Dish Image">
+                    <h4><span style="color: maroon;" class="vegetarianicon">&#8865;</span>Chicken Chinese Hakka Noodles</h4>
+                    <h3>&#8377 190 </h3>
+                    <button >Quantity</button>
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+            
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/ozfbimwml38lqma9miiz" alt="Dish Image">
+                    <h4><span style="color: maroon;" class="vegetarianicon">&#8865;</span>Chicken Burnt Garlic Noodles</h4>
+                    <h3>&#8377 200 </h3>
+                    <button >Quantity</button>
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+            
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/tfaiomr8xrxebuqp3b5r" alt="Dish Image">
+                    <h4><span style="color: maroon;" class="vegetarianicon">&#8865;</span>Chicken Schezwan Noodles</h4>
+                    <h3>&#8377 230 </h3>
+                    <button >Quantity</button>
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

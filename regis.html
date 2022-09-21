@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title> Delice Registration </title>
+        <style>
+            body{
+                background-image:url("regis.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+
+            }
+            #frm{
+                border: solid #ffffff 1px;  
+                width:500px;  
+                height:350px;
+                border-radius: 2px;  
+                margin: auto;  
+                margin-top:70px ;
+                opacity: 0.9;
+                background:#003153;  
+            
+                padding: 50px;  
+                color: #ffe5b4;
+            }
+            .tb{
+                height:28px; width:230px; border:1px solid #ffe5b4; color:#00487a; font-weight:bold; border-left:2px solid #ffe5b4;  ;
+                background-color:#fff ;
+            } 
+            .btn{
+                width:100px; height:32px; outline:none;  font-weight:bold; border:0px solid #00487a; text-shadow: 0px 0.5px 0.5px #fff;	
+                border-radius: 2px; font-weight: 600; color: #00487a; letter-spacing: 1px; font-size:14px; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;
+                margin-left:120px;
+            } 
+            .btn1{
+                width:140px; height:32px; outline:none;  font-weight:bold; border:0px solid #00487a; text-shadow: 0px 0.5px 0.5px #fff;	
+                border-radius: 2px; font-weight: 600; color: #00487a; letter-spacing: 1px; font-size:14px; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;
+                margin-left:15px;
+            } 
+            .btn:hover
+            {
+                background-color:#ebded1; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px solid #f1f1f1; color: #003153;
+            }
+            .btn1:hover
+            {
+                background-color:#ebded1; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px solid #f1f1f1; color: #003153;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "frm">
+        
+            <h1 style="font-size:30;" >&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspCreate Delice Account</h1> <br>
+            <form action="regis.php" method="post" name="f1" >  
+                <p>  
+                    <label> Enter Name:&nbsp  &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp</label>  
+                    <input type = "text" placeholder="Enter your Name" id ="user" name  = "name" class="tb" />  
+                </p>  
+                <p>  
+                    <label> Enter Email Id:&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label>  
+                    <input type = "email" placeholder="Enter your Email" id ="pass" name  = "email" class="tb" />
+                </p>
+                <p>  
+                    <label> Enter Password:&nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp </label>  
+                    <input type = "password" placeholder="Enter your Password" id ="pass" name  = "pass" class="tb" />
+                </p>
+                <p>  
+                    <label> Enter Phone Number:&nbsp&nbsp &nbsp  </label>  
+                    <input type = "text" placeholder="Enter your Number" id ="pass" name  = "ph" class="tb" maxlength="10" />
+                </p>
+                <p>  
+                    <br>   
+                    <input type="reset" value="Clear Form" class="btn" />
+                    <input type =  "submit" id = "btn" value = "Create Account" name="submit" class="btn1"/>  
+                </p>  
+            </form>  
+        </div>
+    </body>
+
+</html>

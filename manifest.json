@@ -1,0 +1,19 @@
+{
+    "name": "Delice Food App",
+    "short_name": "Delice",
+    "start_url": "index.html",
+    
+    "icons": [
+        
+        {
+          "src": "maskable_icon.png",
+          "sizes": "1500x1500",
+          "type": "image/png",
+          "purpose":"any maskable"
+        }
+        
+      ],
+      "theme_color": "#ffd31d",
+      "background_color": "#333",
+    "display": "standalone"
+  }

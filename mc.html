@@ -1,0 +1,408 @@
+
+<html>
+    <head>
+        <title>McDonald's</title>
+        <link rel="stylesheet" href="http://static.sasongsmat.nu/fonts/vegetarian.css" />
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #003366;
+                height: 80px;
+                }
+
+            li {
+                float: right;
+                width: 100px;
+                
+            }
+            
+            
+            li a {
+                display: block;
+                color: #ffe5b4;
+                text-align: center;
+                padding: 20px 16px;
+                text-decoration: none;
+                height: 80px;
+                font-size: 20px;
+                
+                }
+
+            li a:hover:not(.active) {
+                background-color: #0077cc;
+                }
+
+            .active {
+                background-color: #005999;
+                }
+            .background_img{
+                background-image:url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/arhryqjkhvgqdxme0d08");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                
+            }
+            .image{
+                width:500px;
+                height:300px;
+                
+                background-color:rgb(0, 51, 102,0.8);
+                margin: auto;
+                margin-top: 70px;
+                
+           }
+           .nav{
+                color: #ffe5b4;
+                font-size:54;
+                font-family:'Playfair Display', serif;;
+                padding-top: 100px;
+                text-align: center;
+                transition: transform .2s;
+                
+           }
+           .details{
+            color: #ffe5b4;
+            font-family:'Playfair Display', serif;
+            text-align: center;
+           }
+           .nav:hover{
+
+                -ms-transform: scale(1.1); /* IE 9 */
+                -webkit-transform: scale(1.1); /* Safari 3-8 */
+                transform: scale(1.1); 
+           }
+           .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 30px 20px;
+                
+                padding: 30px 20px;
+                }
+                .items{
+                    box-shadow: 1px 1px 5px 2px rgb(0, 0, 0,0.1);
+                    border-radius: 10px;
+                }
+                .item img{
+                    width: 97%;
+                    height: 300px;
+                    object-fit: cover;
+                    transition:0.2s ease;
+                    border-radius: 10px;
+                    padding-top: 8px;
+                    padding-left: 6px;
+                }
+                .item img:hover{
+                    transform: scale(1.04);
+                }
+                .item h4{
+                    padding:5px;
+                    padding-bottom: 0px;
+                    text-align: center;
+                    font-size: 22px;
+                }
+                .item span{
+                    padding:5px;
+                    padding-bottom: 0px;
+                    text-align: center;
+                    font-size: 22px;
+                }
+                .item h3{
+                    text-align: center;
+                }
+                .item button{
+                    padding: 5px 30px;
+                    border: none;
+                    outline: none;
+                    background-color:  rgb(0, 51, 102,0.9);
+                    color: #ffe5b4;
+                    border-radius: 4px;
+                    font-size: 20px;
+                    transition:0.2s ease;
+                    margin: 10 auto;
+                    display: block;
+                }
+                .item button:hover{
+                    transform: scale(1.08);
+                }
+                .heading{
+                    background-color: rgb(0, 51, 102,0.9);
+                    color:#ffe5b4;
+                    height: 50px;
+                    text-align: center;
+                    font-size: 30px;
+                    
+                }
+                .heading>h3{
+                    margin-top: 5px;
+                    text-align: center;
+                }
+                @media screen and (max-width:1000px){
+                    .grid-container{
+                        grid-template-columns: repeat(2,1fr);
+                    }
+                    
+                }
+                @media screen and (max-width:768px){
+                    .grid-container{
+                        grid-template-columns: repeat(1,1fr);
+                    }
+                    
+                }
+        </style>
+    </head>
+    <body>
+        <div class="background_img">
+            <ul>
+                <li><a href="#contact">Profile</a></li>
+                <li><a href="#contact">Cart</a></li>
+                
+                <li><a  href="hmepage.html">Home</a></li>
+                <img src="delice.jpg" style="width:100 ; height:80 ;float: left;">
+                <li style="float: left; padding: 3px 16px;margin-left: 20px; color: #ffe5b4;font-size:50px;font-family: 'Style Script';">Delice</li>
+                
+            </ul>
+            <div class="image">
+           
+            <p class="nav" >McDonald's</p>
+            <p class="details">Vikroli, Mumbai</p>
+            <p class="details">7:00am to 12midnight</p>
+            
+            </div>
+            <br><br><br><br><br><br><br><br>
+        </div>
+        <div class="heading">
+            <h3 >&mdash; Menu &mdash;</h3>
+        </div>
+        
+        <div class="grid-container">
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/n9bkfix37ohwikvjlzyg" alt="Dish Image">
+                    
+                    <h4> <span class="vegetarianicon">&#8865;</span></span>McVeggie Burger</h4>
+                    <h3>&#8377 103 </h3>
+                    
+                    <button  class="cart" style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/clsixkep9clw9z0vq6yj" alt="Dish Image">
+                    
+                    <h4> <span class="vegetarianicon">&#8865;</span></span>Mexican McAloo Tikki </h4>
+                    <h3>&#8377 55 </h3>
+                    
+                    <button  class="cart" style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/ntjliufdrjodewbs0qcd" alt="Dish Image">
+                    
+                    <h4> <span class="vegetarianicon">&#8865;</span></span>American Cheesy Veg Double Patty Burger</h4>
+                    <h3>&#8377 165 </h3>
+                    
+                    <button  class="cart" style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/q5gewvkcu52gr0ofcr2l" alt="Dish Image">
+                    
+                    <h4> <span class="vegetarianicon">&#8865;</span></span>American Cheese Supreme - Veg Happy Meal</h4>
+                    <h3>&#8377 220 </h3>
+                    
+                    <button  class="cart" style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/igrc1z4zflmavxcouwh0" alt="Dish Image">
+                    
+                    <h4> <span class="vegetarianicon">&#8865;</span></span>Masala Wedges Happy Meal (M)</h4>
+                    <h3>&#8377 180 </h3>
+                    
+                    <button  class="cart" style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtm4yhisaclqvdvx9gf0" alt="Dish Image">
+                    
+                    <h4> <span class="vegetarianicon">&#8865;</span></span>McVeggie Happy Meal</h4>
+                    <h3>&#8377 200 </h3>
+                    
+                    <button  class="cart" style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/ts0zoazz9j6g4loqsodl" alt="Dish Image">
+                    
+                    <h4> <span style="color: maroon;" class="vegetarianicon">&#8865;</span></span>McSpicy Chicken Double Patty Burger</h4>
+                    <h3>&#8377 260 </h3>
+                    
+                    <button   class="cart" style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/jgmjbt3eizxjr3uw3q1p" alt="Dish Image">
+                    
+                    <h4> <span style="color: maroon;" class="vegetarianicon">&#8865;</span></span>McChicken Burger</h4>
+                    <h3>&#8377 120</h3>
+                    
+                    <button class="cart" style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/umwf2je2jj7a9zppkng5" alt="Dish Image">
+                    
+                    <h4> <span style="color: maroon;" class="vegetarianicon">&#8865;</span></span>Chicken Maharaja Mac</h4>
+                    <h3>&#8377 220 </h3>
+                   
+                    <button class="cart" style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+            
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/izrofwf72ay2zz6o6m1w" alt="Dish Image">
+                    
+                    <h4> <span style="color: maroon;" class="vegetarianicon">&#8865;</span></span>Chicken Kebab Burger + McFlurry Oreo (S)</h4>
+                    <h3>&#8377 170 </h3>
+                   
+                    <button class="cart" style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/swqiwqnrhcqjhu2tawyu" alt="Dish Image">
+                    
+                    <h4> <span style="color: maroon;" class="vegetarianicon">&#8865;</span></span>Chicken Kebab Burger + Fries (L)</h4>
+                    <h3>&#8377 190 </h3>
+                    
+                    <button class="cart" style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/bwe17d31trnrzwrgnlyb" alt="Dish Image">
+                    
+                    <h4> <span style="color: maroon;" class="vegetarianicon">&#8865;</span></span>Chicken Kebab Burger + Coke (M)</h4>
+                    <h3>&#8377 170 </h3>
+                   
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/v1nnahltxrb9pynu30oy" alt="Dish Image">
+                    
+                    <h4> <span class="vegetarianicon">&#8865;</span></span> Fries (R) </h4>
+                    <h3>&#8377 58 </h3>
+                  
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+        
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/pqujq1cyinbgg781whox" alt="Dish Image">
+                    <h4><span class="vegetarianicon">&#8865;</span></span> Masala Wedges (R) </h4>
+                    <h3>&#8377 45 </h3>
+                   
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+            
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/job8i6xdbfzebxoknsnu" alt="Dish Image">
+                    <h4> <span class="vegetarianicon">&#8865;</span></span> Cheesy Nugget - Veg Bites </h4>
+                    <h3>&#8377 110 </h3>
+                   
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/hfthigptvgejk096arcu" alt="Dish Image">
+                    
+                    <h4> <span class="vegetarianicon">&#8865;</span></span>Mcflurry Oreo Medium</h4>
+                    <h3>&#8377 107 </h3>
+                   
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+        
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/dvxhpawxsylabux8qt60" alt="Dish Image">
+                    <h4><span class="vegetarianicon">&#8865;</span></span> Soft Serve Hot Fudge</h4>
+                    <h3>&#8377 85 </h3>
+                   
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+            
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/rbaul6n4coeqbp3uitnt" alt="Dish Image">
+                    <h4> <span class="vegetarianicon">&#8865;</span></span> Soft Serve Strawberry</h4>
+                    <h3>&#8377 85 </h3>
+                   
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+            
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/xjhj5xmjqcqp8zcedcw9" alt="Dish Image">
+                    <h4><span  class="vegetarianicon">&#8865;</span>Coke (M)</h4>
+                    <h3>&#8377 82 </h3>
+                   
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+            
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/x2r0jdzaqttc0y9ba5mt" alt="Dish Image">
+                    <h4><span  class="vegetarianicon">&#8865;</span>Sprite (R) </h4>
+                    <h3>&#8377 75 </h3>
+                   
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+            
+            <section class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/yi1xvzmihkbxtxu68rsf" alt="Dish Image">
+                    <h4><span  class="vegetarianicon">&#8865;</span>Fanta (M)</h4>
+                    <h3>&#8377 82 </h3>
+                    
+                    <button style="padding-left: 15px;">Add To Cart</button>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
