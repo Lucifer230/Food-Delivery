@@ -1,73 +1,17 @@
-<html>  
-<head>  
-    <title>Delice Login</title>  
-   
-    <link rel = "stylesheet" type = "text/css" href = "style.css">   
-</head>  
-<body>  
-    <div id = "frm">
-        
-        <h1 style="font-size:30;">Delice Account Login</h1> <br>
-        <form name="f1" action = "auth.php" onsubmit = "return validation()" method = "POST">  
-            <p>  
-                <label> Enter Username:&nbsp &nbsp &nbsp</label>  
-                <input type = "text" placeholder="Enter your Email Id" id ="user" name  = "user" class="tb" />  
-            </p>  
-            <p>  
-                <label> Enter Password:&nbsp&nbsp &nbsp &nbsp </label>  
-                <input type = "password" placeholder="Enter your Password" id ="pass" name  = "pass" class="tb" />
-            </p>  
-            <p>  
-                <br>   
-                <input type="button" value="Register" onclick="location.href='regis.html'" class="btn" />
-                <input type =  "submit" id = "btn" value = "Login" class="btn1"/>  
-            </p>  
-        </form>  
-    </div>  
-    
-    <script>  
-            function validation()  
-            {  
-                var id=document.f1.user.value;  
-                var ps=document.f1.pass.value;  
-                if(id.length=="" && ps.length=="") {  
-                    alert("User Name and Password fields are empty");  
-                    return false;  
-                }  
-                else  
-                {  
-                    if(id.length=="") {  
-                        alert("User Name is empty");  
-                        return false;  
-                    }   
-                    if (ps.length=="") {  
-                    alert("Password field is empty");  
-                    return false;  
-                    }  
-                }                             
-            }  
-        </script>  
-</body>     
-</html>  
-<footer class="footer">
-    <div class="footerContainer">
-        <p class="copyright">© 2021 FOOD ORDERING AND BILLING SYSTEM</p>
-    </div>
-</footer>
+<a href="https://colorlib.com/wp/templates/"><img src="https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-push-logo.png" alt="Colorlib logo"></a>
+<h1 style="text-align:center;">Thank you for using our template!</h1>
+<p style="text-align:center;">For more awesome templates please visit <strong><a href="https://colorlib.com/wp/templates/">Colorlib</a></strong>.</p>
+<br>
+<p style="text-align:center; color:red;"><strong>Copyright information for the template can't be altered/removed unless you purchase a license.</strong>
+
+<p style="text-align:center;"><strong>Removing copyright information without the license will result in suspension of your hosting and/or domain name(s).</strong>
+
+<p style="text-align:center;"><strong>More information about the license is available <a href="https://colorlib.com/wp/licence/">here</a></strong>.</p>
+
 <style>
-	footer {
-        float: bottom;
-        
-        width: 100%;
-    }
-    p.copyright {
-        position: absolute;
-        width: 100%;
-        color: #00487a;
-        line-height: 1px;
-        font-size: 0.7em;
-        text-align: center;
-        bottom:0;
-    }
-    
+img {
+  margin: 0 auto;
+  display: block;
+  margin-top: 20%;
+}
 </style>
